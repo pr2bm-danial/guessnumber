@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zahl raten! / Addidtion</title>
+    <link rel="stylesheet" href="raten_st.css">
+    <script src="raten.js"></script>
+</head>
+<body id="body" onload="beginQuiz()">
+    Rate die Zahl!
+
+    <br>
+    <input type="number" id="choice"> <button onclick="checkAnswer()">prüfe!</button>
+    <br>
+    <p id="reminder"></p>
+    <p id="count"></p>
+    <img id="bild">
+
+    <br>
+    <legend class="box">
+        <label for="quiz"> Mathe Quiz
+            <p id="frage"></p> 
+            <input type="text" name="number" id="versuch">
+            <button id="guck" onclick="checkResponse()">Enter</button>
+            <p id="react"></p>
+        </label>
+
+    </legend>
+    
+    <p id="link">http://127.0.0.1:5500/Zahlraten/raten.html</p> 
+    <button onclick="openLink()">copy</button>
+    <br>
+
+    <p id="ergebnis"></p>
+
+</body>
+</html>
